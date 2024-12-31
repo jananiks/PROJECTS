@@ -1,0 +1,342 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #9CC6B4;
+    color: #333;
+  }
+  
+  /* DisplayData Component Styles */
+  .display-data-page {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px;
+    margin: 20px auto;
+    margin-top: 90px;
+    transition: all 0.3s ease;
+  }
+  
+  .display-data-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color:#21865C;
+  }
+  
+  /* Details Container */
+  .details-container {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .details-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #21865C;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+  }
+  
+  .details-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details-container li {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .details-container li strong {
+    font-weight: 700;
+    color: #21865C;
+  }
+  
+  .details-container p {
+    font-size: 16px;
+    color: #e74c3c;
+    text-align: center;
+  }
+  
+  /* Suggest Food Form Styles */
+  .suggest-food-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .suggest-food-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #21865C;
+    font-size: 1.3rem;
+  }
+  
+  .suggest-food-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .suggest-food-form input:focus {
+    border-color: #21865C;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* Buttons */
+  .wearables-btn {
+    background-color: #21865C;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    width: fit-content;
+    margin-left: 35%;
+  }
+  .suggest-food-btn {
+    background-color: #21865C;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    width: fit-content;
+    margin-left: 37%;
+  }
+  
+  .wearables-btn:hover,
+  .suggest-food-btn:hover {
+    background-color: #175d42;
+    transform: scale(1.05);
+  }
+  
+  /* Details Container Food Styling */
+  .details-container-food {
+    padding: 50px 75px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .details-container-food h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    color: #21865C;
+  }
+  /* Dropdown container */
+  .dropdown {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+  }
+  
+  /* Label styling */
+  .dropdown label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #21865C;
+    font-size: 1.3rem;
+  }
+  
+  /* Dropdown select box styling */
+  .dropdown select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Styling when dropdown is focused */
+  .dropdown select:focus {
+    border-color: #21865C;
+    outline: none;
+    box-shadow: 0 0 8px rgba(33, 134, 92, 0.2);
+  }
+  
+  /* Option styling */
+  .dropdown option {
+    font-size: 16px;
+    padding: 10px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Hover effect for options */
+  .dropdown option:hover {
+    background-color: #21865C;
+    color: #fff;
+  }
+  
+  /* Disabled state */
+  .dropdown select:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .dropdown {
+      width: 100%;
+    }
+  
+    .dropdown select {
+      font-size: 14px;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .display-data-page {
+      padding: 30px;
+      margin: 20px;
+    }
+  
+    .display-data-page h1 {
+      font-size: 24px;
+    }
+  
+    .details-container,
+    .details-container-food {
+      padding: 20px;
+    }
+  
+    .details-container h2 {
+      font-size: 20px;
+    }
+  
+    .details-container li {
+      font-size: 14px;
+    }
+  
+    .details-container p {
+      font-size: 14px;
+    }
+  
+    .suggest-food-form input {
+      font-size: 14px;
+    }
+  
+    .wearables-btn,
+    .suggest-food-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .display-data-page {
+      margin-left: 10px;
+      padding: 20px;
+    }
+  
+    .display-data-page h1 {
+      font-size: 22px;
+    }
+  
+    .details-container h2 {
+      font-size: 18px;
+    }
+  
+    .details-container li {
+      font-size: 13px;
+    }
+  
+    .suggest-food-form label {
+      font-size: 1.1rem;
+    }
+  
+    .suggest-food-form input {
+      font-size: 14px;
+    }
+  
+    .wearables-btn,
+    .suggest-food-btn {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  
+    /* Button adjustments for smaller screens */
+    .wearables-btn,
+    .suggest-food-btn {
+      width: auto;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .display-data-page {
+      margin-left: 5px;
+      padding: 15px;
+    }
+  
+    .display-data-page h1 {
+      font-size: 20px;
+    }
+  
+    .details-container {
+      padding: 10px;
+    }
+  
+    .details-container h2 {
+      font-size: 16px;
+    }
+  
+    .details-container li {
+      font-size: 12px;
+    }
+  
+    .details-container p {
+      font-size: 12px;
+    }
+  
+    .suggest-food-form label {
+      font-size: 1rem;
+    }
+  
+    .suggest-food-form input {
+      font-size: 12px;
+    }
+  
+    .wearables-btn,
+    .suggest-food-btn {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      margin-left: 30%;
+      transform: translateX(-30%);
+    }
+  }
